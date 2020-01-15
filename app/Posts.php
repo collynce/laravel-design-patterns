@@ -10,4 +10,9 @@ class Posts extends Model
         'name', 'author_id', 'category_id', 'title', 'description'
     ];
 
+    public static function scopeFetchAuthor($query,$id)
+    {
+        return $query->where('id', '=', $id);
+    }
+
 }
