@@ -18,7 +18,6 @@ class PostsController extends Controller
         $this->post->all();
     }
 
-
     public function show($id)
     {
         $this->post->get($id);
